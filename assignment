@@ -1,7 +1,10 @@
+package Projects;
 import javax.swing.JOptionPane;
 
-public class javaproj2 {
-	public static void mainMethod(String args[]) {
+public class JavaProj 
+{
+	public static void main(String args[])
+	{
 		
 		int classes;
 		String input;
@@ -20,12 +23,10 @@ public class javaproj2 {
 	                                       "for the class " + count + ": ");
 	         credit = Double.parseDouble(input);
 	         totalCredit += credit;
-	         
+	      }
 	        JOptionPane.showMessageDialog(null, 
-	                String.format("The total sales are $%,.2f", totalCredit));
+	                String.format("The total credits are %,.2f", totalCredit));
 
 	        System.exit(0);
-	      }
-		
-	  }
+	  }		
 }
