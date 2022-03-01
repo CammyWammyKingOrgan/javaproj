@@ -14,11 +14,11 @@ public class JavaProj
 		
 		input = JOptionPane.showInputDialog("How many classes " +       //This line will display a dialog box and ask the question of how many classes the user have.
 									"do you have this semester? ");    
-		classes = Integer.parseInt(input);
+		classes = Integer.parseInt(input);  // This makes the users inputs become the classes integer
 		
-		totalCredit = 0.0;
+		totalCredit = 0.0; //starting number for totalCredit
 		
-		for (int count = 1; count <= classes; count++)
+		for (int count = 1; count <= classes; count++) //Causes line 23 to repeat a certain amount of times
 	      {
 	         input = JOptionPane.showInputDialog("Enter the credit " +
 	                                       "for the class " + count + ": ");
