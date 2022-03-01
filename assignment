@@ -7,12 +7,11 @@ public class JavaProj
 	{
 		
 		int classes;
-		String input; 	//To hold the users inputs
-		double totalCredit; 
+		String input;
+		double totalCredit;
 		double credit;
 		double gpa;
 		
-		//Will display a dialog box that asks the questionHow many class do you have this semester.
 		input = JOptionPane.showInputDialog("How many classes " +
 									"do you have this semester? ");
 		classes = Integer.parseInt(input);
@@ -29,28 +28,27 @@ public class JavaProj
 	        JOptionPane.showMessageDialog(null, 
 	                String.format("The total credits are %,.2f", totalCredit));
 	        
-		//This calculates the gpa
-	        gpa = totalCredit / classes; 
+	        gpa = totalCredit / classes;
 	        JOptionPane.showMessageDialog(null,
 	        		String.format("Your current GPA is: %,.2f", gpa));
 	        
-	  if (gpa >= 3.5 && gpa <= 4.0) {
+	  if (gpa >= 3.5 && gpa <= 4.0) {  // if the gpa is greater than or equal to 3.5 and less than or equal to 4.0 you are awarded the Presidential Scholarship. 
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " + 
 	        					"Presidental Scholarship worth: $20,000"));
-	  } else if (gpa >= 3.0 && gpa <= 3.49) {
+	  } else if (gpa >= 3.0 && gpa <= 3.49) { // if the gpa is greater than or equal to 3.0 and less than or equal to 3.49 you are awarded the ITS Scholarship.
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " +
 	        					"ITS Scholarship worth: $12,000"));
-	  } else if (gpa >= 2.5 && gpa <= 2.99) {
+	  } else if (gpa >= 2.5 && gpa <= 2.99) { // if the gpa is greater than or equal to 2.5 and less than or equal to 2.99 you are awarded the Academic Scholarship.
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " +
 	        					"Academic Scholarship worth: $7.000"));
-	  } else if (gpa >= 2.0 && gpa <= 2.49) {
+	  } else if (gpa >= 2.0 && gpa <= 2.49) { // if the gpa is greater than or equal to 2.0 and less than or equal to 2.49 you are awarded the Faith Scholarship.
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " +
 	        					"Faith Sholarship worth: $3,000"));
-	  } else if (gpa < 1.99) {
+	  } else if (gpa < 1.99) { // if the gpa is less than 1.99 then you will not qualify for a scholarhsip.
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You do not qualify for any " +
 	        					"of the Scholarship Programs."));
