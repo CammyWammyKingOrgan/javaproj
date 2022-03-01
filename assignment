@@ -1,17 +1,31 @@
 
- public static void mainMethod(String args[]) {
+ 	public static void mainMethod(String args[]) {
 		
-	int Presidential_Scholarship = 20000;
-	int ITS_Scholarship = 12000;
-	int Academic_Scholarship = 7000;
-	int Endowed_Scholarship = 3000;
-	int A = 4.0;
-	int B = 3.0;
-	int C = 2.0;
-	int D = 1.0;
-	int F = 0.0;
-}
-static void grade_each_class() {
-	
+		int Presidential_Scholarship = 20000;
+		int ITS_Scholarship = 12000;
+		int Academic_Scholarship = 7000;
+		int Endowed_Scholarship = 3000;
+		
+		float A = (float) 4.0;
+		float B = (float) 3.0;
+		float C = (float) 2.0;
+		float D = (float) 1.0;
+		float F = (float) 0.0;
+		
+		String grades;
+		
+		
+	}
+	static void grade_each_class() {
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Please insert your letter ");
+		System.out.println("grade for your four classes this semester");
+		System.out.println();
+		
+		System.out.println("Enter the grade for your first class: ");
+		
+		
 	}
 }
