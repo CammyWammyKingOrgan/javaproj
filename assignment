@@ -28,7 +28,7 @@ public class JavaProj
 	        JOptionPane.showMessageDialog(null, 
 	                String.format("The total credits are %,.2f", totalCredit));
 	        
-	        gpa = totalCredit / classes;
+	        gpa = totalCredit / classes;     //This calculates the gpa 
 	        JOptionPane.showMessageDialog(null,
 	        		String.format("Your current GPA is: %,.2f", gpa));
 	        
