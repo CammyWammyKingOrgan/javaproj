@@ -7,10 +7,11 @@ public class JavaProj
 	{
 		
 		int classes;
-		String input; //To hold the users inputs
+		String input; 	//To hold the users inputs
 		double totalCredit; 
 		double credit;
 		double gpa;
+		
 		//Will display a dialog box that asks the questionHow many class do you have this semester.
 		input = JOptionPane.showInputDialog("How many classes " +
 									"do you have this semester? ");
@@ -28,7 +29,8 @@ public class JavaProj
 	        JOptionPane.showMessageDialog(null, 
 	                String.format("The total credits are %,.2f", totalCredit));
 	        
-	        gpa = totalCredit / classes;     //This calculates the gpa 
+		//This calculates the gpa
+	        gpa = totalCredit / classes; 
 	        JOptionPane.showMessageDialog(null,
 	        		String.format("Your current GPA is: %,.2f", gpa));
 	        
