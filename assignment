@@ -1,6 +1,14 @@
 /!WHat is need for the project. 
 /!Varibles(D), Constants, Operators, Conditons(and or not), Functions, Reading Input, Performing calculations, If Statements, If-else statements, For, or while, or Dowhile loops
-    	int Presidential_Scholarship = 20000;
+ 
+ public static void mainMethod(String args[]) {
+		
+	int Presidential_Scholarship = 20000;
 	int ITS_Scholarship = 12000;
 	int Academic_Scholarship = 7000;
 	int Endowed_Scholarship = 3000;
+}
+static void grade_each_class() {
+	
+	}
+}
