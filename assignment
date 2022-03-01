@@ -6,11 +6,11 @@ public class JavaProj
 	public static void main(String args[])
 	{
 		
-		int classes;
-		String input;
-		double totalCredit;
-		double credit;
-		double gpa;
+		int classes;      // The number of class
+		String input;     // To hold the user's input
+		double totalCredit;     // Accumulator
+		double credit;    //The nnumber of credits
+		double gpa;       // The number for gpa
 		
 		input = JOptionPane.showInputDialog("How many classes " +       //This line will display a dialog box and ask the question of how many classes the user have.
 									"do you have this semester? ");    
