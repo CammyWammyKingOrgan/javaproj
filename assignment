@@ -31,7 +31,6 @@ public class JavaProj
 	        gpa = totalCredit / classes;
 	        JOptionPane.showMessageDialog(null,
 	        		String.format("Your current GPA is: %,.2f", gpa));
-
 	        
 	  if (gpa >= 3.5 && gpa <= 4.0) {
 		  JOptionPane.showMessageDialog(null,
@@ -58,3 +57,4 @@ public class JavaProj
 	      System.exit(0);
 	  }		
 }
+//Sources: Dr. Munoz ITS 750 powerpoints and Dr. Munoz Github - https://github.com/DrGMC/JAVA
