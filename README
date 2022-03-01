@@ -1,1 +1,1 @@
-Our program will allow the user to give inputs of the user's GPA, recent grades, and current scholarships if the user has any. The input will then be calculated to determine if the scholarship they currently have is still applicable for the input given, and will also say if the user is qualified for a more robust scholarship or not.
+Our program will allow the user to input how many course they are taking and how much each course credit is worth. The users input will then be calculated to determine if the user will qualified for a certian scholarship within the system. 
