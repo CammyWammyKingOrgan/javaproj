@@ -7,11 +7,11 @@ public class JavaProj
 	{
 		
 		int classes;
-		String input;
-		double totalCredit;
+		String input; //To hold the users inputs
+		double totalCredit; 
 		double credit;
 		double gpa;
-		
+		//Will display a dialog box that asks the questionHow many class do you have this semester.
 		input = JOptionPane.showInputDialog("How many classes " +
 									"do you have this semester? ");
 		classes = Integer.parseInt(input);
