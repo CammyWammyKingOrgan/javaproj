@@ -24,15 +24,18 @@ public class JavaProj1
 		//Causes line 23 to repeat a certain amount of times
 		for (int count = 1; count <= classes; count++)
 	      {
+	      	//Displays a dialog box asking the user to input their credits.
 	         input = JOptionPane.showInputDialog("Enter the credit " +
 	                                       "for the class " + count + ": ");
 	         credit = Double.parseDouble(input);
 	         totalCredit += credit;
 	      }
+	      	//Displays the total amount of credits the user has
 	        JOptionPane.showMessageDialog(null, 
 	                String.format("The total credits are %,.2f", totalCredit));
-	        
+	        //Does the math to find the usrs gpa
 	        gpa = totalCredit / classes;
+		//Displays users gpa
 	        JOptionPane.showMessageDialog(null,
 	        		String.format("Your current GPA is: %,.2f", gpa));
 	        
