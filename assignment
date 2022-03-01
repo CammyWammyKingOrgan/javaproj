@@ -12,8 +12,8 @@ public class JavaProj
 		double credit;
 		double gpa;
 		
-		input = JOptionPane.showInputDialog("How many classes " +
-									"do you have this semester? ");
+		input = JOptionPane.showInputDialog("How many classes " +       //This line will display a dialog box and ask the question of how many classes the user have.
+									"do you have this semester? ");    
 		classes = Integer.parseInt(input);
 		
 		totalCredit = 0.0;
