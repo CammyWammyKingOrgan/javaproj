@@ -1,2 +1,4 @@
-Our program will allow the user to input how many courses they are taking and how much credit each course is worth.
-The users input will then be calculated to determine if the user will qualify for a certain scholarship program within the system. 
+Our Program will allow the user to input how many courses they are taking and how much credit each course is worth. 
+The user input will then be calculated to determine if the user will qualify for a certain scholarship program within the system. 
+Then the cumulative GPA will be calculated to see if they still have the scholarship for the following semesters. 
+At the end of your college semester, it will then tell you how much money you owe the university after scholarships.
