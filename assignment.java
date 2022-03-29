@@ -116,11 +116,31 @@ public class JavaProj1
 	public static void moneyOwed()/*This function will calculate how much money is owed
 												to the university after scholarship*/
 	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		//List of scholarship awards from before
+		int PresidentialScholarship = 12000; 
+		int ITSScholarship = 12000;
+		int AcademicScholarship = 7000;
+		int FaithScholarship = 3000;
+		
 		int MoneyOwed; //This is the variable used for final cost out of pocket
 		int TuitionCost;//Cost of tuition without Scholarship
 		String input;     // To hold the user's input
 		
 		input = JOptionPane.showInputDialog("How much does your tuition cost without scholarships? ");
+			TuitionCost = keyboard.nextInt();
+		input = JOptionPane.showInputDialog("Which scholarship were you awarded? ");
+			input = keyboard.nextLine();
+		if (input == "Presidential Scholarship")
+			MoneyOwed = TuitionCost - Input; 
+			JOptionPane.showMessageDialog(null,
+	        		String.format("You still owe the university: %,.2f"));
+				
+		
+		
+		
+		
 		
 		
 		JOptionPane.showMessageDialog(null,
