@@ -128,25 +128,22 @@ public class JavaProj1
 		int TuitionCost;//Cost of tuition without Scholarship
 		String input;     // To hold the user's input
 		
-		input = JOptionPane.showInputDialog("How much does your tuition cost without scholarships? ");
+		input = JOptionPane.showInputDialog("How much does your tuition cost without scholarships? ");// this will give the tuition amount without scholarships
 			TuitionCost = keyboard.nextInt();
-		input = JOptionPane.showInputDialog("Which scholarship were you awarded? ");
+		input = JOptionPane.showInputDialog("Which scholarship were you awarded? ");// asks which scholarship
 			input = keyboard.nextLine();
-		if (input == "Presidential Scholarship")
+		if (input == "Presidential Scholarship")// the presidential scholarship is worth 12000
 			MoneyOwed = TuitionCost - Input; 
 			JOptionPane.showMessageDialog(null,
-	        		String.format("You still owe the university: %,.2f"));
+	        		String.format("You still owe the university: %,.2f")); // this will show that you still owe money
 				
-		
-		
-		
 		
 		
 		
 		JOptionPane.showMessageDialog(null,
         		String.format("This is how much you owe the university: %,.2f"));//Will show the user how much is still owed
 		
-	      System.exit(0);
+	      System.exit(0);// system exit shuts the running operation down, you can restart it again
 	  }		
 }
 //Sources: Dr. Munoz ITS 275 powerpoints and Dr. Munoz Github - https://github.com/DrGMC/JAVA
