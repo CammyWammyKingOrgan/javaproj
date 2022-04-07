@@ -132,23 +132,23 @@ public class JavaProj1
 		
 		input = JOptionPane.showInputDialog("How much does your tuition cost without scholarships? ");
 			TuitionCost = keyboard.nextInt();
-		input = JOptionPane.showInputDialog("Which Scholarship were you awarded? ");
+		input = JOptionPane.showInputDialog("Which Scholarship were you awarded? ");// the scholarship that was awarded based off of gpa
 			if (input == "Presidentail Scholarship") {
 				MoneyOwed = TuitionCost - PresidentialScholarship;
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: %,.2f"));
+		        		String.format("You still owe the university: %,.2f"));// money owed after the presidntial scholarship
 			} else if (input == "ITSScholarship") {
 				MoneyOwed = TuitionCost - ITSScholarship;
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: %,.2f"));
+		        		String.format("You still owe the university: %,.2f"));// money owed after the ITS scholarship
 			} else if (input == "Academic Scholarship") {
 				MoneyOwed = TuitionCost - AcademicScholarship;
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: %,.2f"));
+		        		String.format("You still owe the university: %,.2f"));// money owed after the academic scholarship
 			} else if (input == "Faith Scholarship") {
 				MoneyOwed = TuitionCost - FaithScholarship;
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: %,.2f"));
+		        		String.format("You still owe the university: %,.2f"));// money owed after the faith scholarship
 			}
 				
 			
