@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class JavaProj1 
 {
+
 	public static void main(String args[])
 	{
 		
@@ -123,27 +124,40 @@ public class JavaProj1
 		int ITSScholarship = 12000;
 		int AcademicScholarship = 7000;
 		int FaithScholarship = 3000;
-		
+			
 		int MoneyOwed; //This is the variable used for final cost out of pocket
 		int TuitionCost;//Cost of tuition without Scholarship
 		String input;     // To hold the user's input
+		//String AwardedScholarship; //How much the user was given from scholarship
 		
-		input = JOptionPane.showInputDialog("How much does your tuition cost without scholarships? ");// this will give the tuition amount without scholarships
+		input = JOptionPane.showInputDialog("How much does your tuition cost without scholarships? ");
 			TuitionCost = keyboard.nextInt();
-		input = JOptionPane.showInputDialog("Which scholarship were you awarded? ");// asks which scholarship
-			input = keyboard.nextLine();
-		if (input == "Presidential Scholarship")// the presidential scholarship is worth 12000
-			MoneyOwed = TuitionCost - Input; 
-			JOptionPane.showMessageDialog(null,
-	        		String.format("You still owe the university: %,.2f")); // this will show that you still owe money
+		input = JOptionPane.showInputDialog("Which Scholarship were you awarded? ");
+			if (input == "Presidentail Scholarship") {
+				MoneyOwed = TuitionCost - PresidentialScholarship;
+				JOptionPane.showMessageDialog(null,
+		        		String.format("You still owe the university: %,.2f"));
+			} else if (input == "ITSScholarship") {
+				MoneyOwed = TuitionCost - ITSScholarship;
+				JOptionPane.showMessageDialog(null,
+		        		String.format("You still owe the university: %,.2f"));
+			} else if (input == "Academic Scholarship") {
+				MoneyOwed = TuitionCost - AcademicScholarship;
+				JOptionPane.showMessageDialog(null,
+		        		String.format("You still owe the university: %,.2f"));
+			} else if (input == "Faith Scholarship") {
+				MoneyOwed = TuitionCost - FaithScholarship;
+				JOptionPane.showMessageDialog(null,
+		        		String.format("You still owe the university: %,.2f"));
+			}
 				
-		
-		
-		
-		JOptionPane.showMessageDialog(null,
-        		String.format("This is how much you owe the university: %,.2f"));//Will show the user how much is still owed
-		
-	      System.exit(0);// system exit shuts the running operation down, you can restart it again
-	  }		
+			
+			
+			//MoneyOwed = TuitionCost - AwardedScholarship
+			
+				
+	      System.exit(0);
+
+	}	
 }
 //Sources: Dr. Munoz ITS 275 powerpoints and Dr. Munoz Github - https://github.com/DrGMC/JAVA
