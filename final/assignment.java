@@ -137,7 +137,7 @@ public class JavaProj1
 				MoneyOwed = TuitionCost - PresidentialScholarship;
 				JOptionPane.showMessageDialog(null,
 		        		String.format("You still owe the university: %,.2f", MoneyOwed));// money owed after the presidntial scholarship
-			} else if (input == "ITSScholarship") {
+			} else if (input == "ITS Scholarship") {
 				MoneyOwed = TuitionCost - ITSScholarship;
 				JOptionPane.showMessageDialog(null,
 		        		String.format("You still owe the university: %,.2f", MoneyOwed));// money owed after the ITS scholarship
