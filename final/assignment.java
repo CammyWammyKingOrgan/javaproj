@@ -72,10 +72,10 @@ public class JavaProj1
 		  
 		System.out.println("Do you want to determine if you will keep your scholarship " +
 				  				"next semester? Y/N");
-		String yesno = YesNo.next();
+		String yesno = YesNo.next();// allows user to but Y for yes or N for no
 		if (yesno.equals("Y")) {
 			
-			followedSemester();
+			followedSemester();// calculates the following semester
 		}
 			else if(yesno.equals("N")) {
 				
