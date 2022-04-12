@@ -121,7 +121,7 @@ public class JavaProj1
 		
 		//List of scholarship awards from before
 		int PresidentialScholarship = 20000; 
-		int ITSScholarship = 12000;
+		int ITsScholarship = 12000;
 		int AcademicScholarship = 7000;
 		int FaithScholarship = 3000;
 			
@@ -138,7 +138,7 @@ public class JavaProj1
 				JOptionPane.showMessageDialog(null,
 		        		String.format("You still owe the university: %,.2f", MoneyOwed));// money owed after the presidntial scholarship
 			} else if (input == "ITS Scholarship") {
-				MoneyOwed = TuitionCost - ITSScholarship;
+				MoneyOwed = TuitionCost - ITsScholarship;
 				JOptionPane.showMessageDialog(null,
 		        		String.format("You still owe the university: %,.2f", MoneyOwed));// money owed after the ITS scholarship
 			} else if (input == "Academic Scholarship") {
