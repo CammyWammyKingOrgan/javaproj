@@ -133,7 +133,7 @@ public class JavaProj1
 		input = JOptionPane.showInputDialog("How much does your tuition cost without scholarships? ");
 			TuitionCost = keyboard.nextInt();
 		input = JOptionPane.showInputDialog("Which Scholarship were you awarded? ");// the scholarship that was awarded based off of gpa
-			if (input == "Presidentail Scholarship") {
+			if (input == "Presidential Scholarship") {
 				MoneyOwed = TuitionCost - PresidentialScholarship;
 				JOptionPane.showMessageDialog(null,
 		        		String.format("You still owe the university: %,.2f", MoneyOwed));// money owed after the presidntial scholarship
