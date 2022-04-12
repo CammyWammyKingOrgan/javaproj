@@ -120,7 +120,7 @@ public class JavaProj1
 		Scanner keyboard = new Scanner(System.in);
 		
 		//List of scholarship awards from before
-		int PresidentialScholarship = 12000; 
+		int PresidentialScholarship = 20000; 
 		int ITSScholarship = 12000;
 		int AcademicScholarship = 7000;
 		int FaithScholarship = 3000;
