@@ -136,19 +136,19 @@ public class JavaProj1
 			if (input == "Presidentail Scholarship") {
 				MoneyOwed = TuitionCost - PresidentialScholarship;
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: %,.2f"));// money owed after the presidntial scholarship
+		        		String.format("You still owe the university: %,.2f", MoneyOwed));// money owed after the presidntial scholarship
 			} else if (input == "ITSScholarship") {
 				MoneyOwed = TuitionCost - ITSScholarship;
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: %,.2f"));// money owed after the ITS scholarship
+		        		String.format("You still owe the university: %,.2f", MoneyOwed));// money owed after the ITS scholarship
 			} else if (input == "Academic Scholarship") {
 				MoneyOwed = TuitionCost - AcademicScholarship;
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: %,.2f"));// money owed after the academic scholarship
+		        		String.format("You still owe the university: %,.2f", MoneyOwed));// money owed after the academic scholarship
 			} else if (input == "Faith Scholarship") {
 				MoneyOwed = TuitionCost - FaithScholarship;
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: %,.2f"));// money owed after the faith scholarship
+		        		String.format("You still owe the university: %,.2f", MoneyOwed));// money owed after the faith scholarship
 			}
 				
 			
