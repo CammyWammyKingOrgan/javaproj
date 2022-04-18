@@ -71,15 +71,15 @@ public class JavaProj1
 		
 		  
 		System.out.println("Do you want to determine if you will keep your scholarship " +
-				  				"next semester? Y/N");
-		String yesno = YesNo.next();
+				  				"next semester? Y/N"); // displays an option to choose yes or no 
+		String yesno = YesNo.next(); // if Y the program will continue to run for the following semester
 		if (yesno.equals("Y")) {
 			
 			followedSemester();
 		}
 			else if(yesno.equals("N")) {
 				
-				System.exit(0);
+				System.exit(0); // if N is entered it will exit the program
 		}
 	}
 			
@@ -95,11 +95,11 @@ public class JavaProj1
 		Scanner YesNo = new Scanner(System.in);//Scanner for the user to enter Y or N
 		
 		
-		input = JOptionPane.showInputDialog("What was your starting GPA last semester? ");
+		input = JOptionPane.showInputDialog("What was your starting GPA last semester? "); // asking the user for their gpa of the previous semester
 		
 		gpa = Double.parseDouble(input);
 		
-		input = JOptionPane.showInputDialog("What is your new GPA after last semester?");
+		input = JOptionPane.showInputDialog("What is your new GPA after last semester?"); // gpa calculated after the past two semesters
 		
 		NewGPA = Double.parseDouble(input);
 		
@@ -107,11 +107,11 @@ public class JavaProj1
 		
 		if (NewGPA > gpa) {
 		JOptionPane.showMessageDialog(null,
-				String.format("Your GPA raised by %,.2f", gpaDifference));
+				String.format("Your GPA raised by %,.2f", gpaDifference)); // shows the user how much their gpa grew after the semester
 		}
 			else if(NewGPA < gpa) {
 				JOptionPane.showMessageDialog(null,
-						String.format("Your GPA dropped by %,.2f", gpaDifference));
+						String.format("Your GPA dropped by %,.2f", gpaDifference)); // shows the user the amount their gpa dropped after the semester
 		}
 		
 		
@@ -155,7 +155,7 @@ public class JavaProj1
 		int ScholarshipWorth;
 		
 		input = JOptionPane.showInputDialog("How much does your tuition cost " +
-											"without scholarships? ");
+											"without scholarships? "); // asking the user to input their tuition
 		TuitionCost = Integer.parseInt(input);
 		
 		input = JOptionPane.showInputDialog("How much was the scholarship you were awarded? ");
@@ -165,17 +165,17 @@ public class JavaProj1
 				JOptionPane.showMessageDialog(null,
 		        		String.format("You still owe the university: %,.2f", MoneyOwed));
 			} else if (input.equals("ITS Scholarship")) {
-				MoneyOwed = TuitionCost - AwardedScholarship[1];
+				MoneyOwed = TuitionCost - AwardedScholarship[1]; // subtracts the tution form the ITS scholarship amount
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: %,.2f", MoneyOwed));
+		        		String.format("You still owe the university: %,.2f", MoneyOwed)); // money owed after ITS scholarship
 			} else if (input.equals("Academic Scholarship")) {
-				MoneyOwed = TuitionCost - AwardedScholarship[2];
+				MoneyOwed = TuitionCost - AwardedScholarship[2]; // subtracts the tution cost from the Academic scholarship ammount
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: %,.2f", MoneyOwed));
+		        		String.format("You still owe the university: %,.2f", MoneyOwed)); // money owed after Academic scholarship
 			} else if (input.equals("Faith Scholarship")) {
-				MoneyOwed = TuitionCost - AwardedScholarship[3];
+				MoneyOwed = TuitionCost - AwardedScholarship[3]; // subtracts the tution cost from the Faith scholarship amount
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: %,.2f", MoneyOwed));
+		        		String.format("You still owe the university: %,.2f", MoneyOwed)); // money owed after Faith scholarship
 			}
 			
 				
