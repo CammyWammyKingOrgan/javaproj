@@ -4,7 +4,13 @@ import java.util.Scanner;
 
 public class JavaProj1 
 {
-
+	public void disp(String Scholarship) {
+		System.out.println(Scholarship);
+	}
+	public void disp(int Scholarship) {
+		System.out.println(Scholarship);
+	}
+	
 	public static void main(String args[])
 	{
 		
@@ -48,26 +54,40 @@ public class JavaProj1
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " + 
 	        					"Presidental Scholarship worth: $20,000"));
+		  JavaProj1 obj = new JavaProj1();
+		  obj.disp("Presidential Scholarship");
+		  obj.disp(20000);
 	  } else if (gpa >= 3.0 && gpa <= 3.49) { /* if the gpa is greater than or equal
 	   						to 3.0 and less than or equal to 3.49 you are awarded the ITS Scholarship.*/
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " +
 	        					"ITS Scholarship worth: $12,000"));
+		  JavaProj1 obj = new JavaProj1();
+		  obj.disp("ITS Scholarship");
+		  obj.disp(12000);
 	  } else if (gpa >= 2.5 && gpa <= 2.99) { /* if the gpa is greater than or equal
 	   						to 2.5 and less than or equal to 2.99 you are awarded the Academic Scholarship.*/
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " +
 	        					"Academic Scholarship worth: $7.000"));
+		  JavaProj1 obj = new JavaProj1();
+		  obj.disp("Academic Scholarship");
+		  obj.disp(7000);
 	  } else if (gpa >= 2.0 && gpa <= 2.49) { /* if the gpa is greater than or equal 
 	  						to 2.0 and less than or equal to 2.49 you are awarded the Faith Scholarship.*/
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " +
 	        					"Faith Sholarship worth: $3,000"));
+		  JavaProj1 obj = new JavaProj1();
+		  obj.disp("Faith Scholarship");
+		  obj.disp(3000);
 	  } else if (gpa < 1.99) { // if the gpa is less than 1.99 then you will not qualify for a scholarship.
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You do not qualify for any " +
 	        					"of the Scholarship Programs."));
 	  }
+	  
+	  
 		
 		  
 		System.out.println("Do you want to determine if you will keep your scholarship " +
@@ -134,11 +154,12 @@ public class JavaProj1
 		}
 			else if(yesno.equals("N")) {//Allows the user to enter N for No
 				
-			main(null);
+			System.exit(0);
 		
 		}
 	}
-	
+
+
 	public static void moneyOwed()/*This function will calculate how much money is owed
 												to the university after scholarship*/
 	{
@@ -147,7 +168,6 @@ public class JavaProj1
 		//List of scholarship awards from before as an array 
 		int [] AwardedScholarship = {20000, 12000, 7000, 3000};
 
-			
 		double MoneyOwed; //This is the variable used for final cost out of pocket
 		int TuitionCost; //Cost of tuition without Scholarship
 		String input;     // To hold the user's input
