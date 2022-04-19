@@ -1,6 +1,6 @@
 package Projects;
-import javax.swing.JOptionPane;
-import java.util.Scanner;
+import javax.swing.JOptionPane; //Import for us to use display box
+import java.util.Scanner; //Import for use of scanner class
 
 public class JavaProj1 
 {
@@ -55,32 +55,32 @@ public class JavaProj1
 	        		String.format("You have been awarded the " + 
 	        					"Presidental Scholarship worth: $20,000"));
 		  JavaProj1 obj = new JavaProj1();
-		  obj.disp("Presidential Scholarship");
-		  obj.disp(20000);
+		  obj.disp("Presidential Scholarship"); //displays the scholarship awarded
+		  obj.disp(20000); //displays the amount for user to look back at
 	  } else if (gpa >= 3.0 && gpa <= 3.49) { /* if the gpa is greater than or equal
 	   						to 3.0 and less than or equal to 3.49 you are awarded the ITS Scholarship.*/
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " +
 	        					"ITS Scholarship worth: $12,000"));
 		  JavaProj1 obj = new JavaProj1();
-		  obj.disp("ITS Scholarship");
-		  obj.disp(12000);
+		  obj.disp("ITS Scholarship"); //displays the scholarship awarded
+		  obj.disp(12000); //displays the amount for user to look back at
 	  } else if (gpa >= 2.5 && gpa <= 2.99) { /* if the gpa is greater than or equal
 	   						to 2.5 and less than or equal to 2.99 you are awarded the Academic Scholarship.*/
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " +
 	        					"Academic Scholarship worth: $7.000"));
 		  JavaProj1 obj = new JavaProj1();
-		  obj.disp("Academic Scholarship");
-		  obj.disp(7000);
+		  obj.disp("Academic Scholarship"); //displays the scholarship awarded
+		  obj.disp(7000); //displays the amount for user to look back at
 	  } else if (gpa >= 2.0 && gpa <= 2.49) { /* if the gpa is greater than or equal 
 	  						to 2.0 and less than or equal to 2.49 you are awarded the Faith Scholarship.*/
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " +
 	        					"Faith Sholarship worth: $3,000"));
 		  JavaProj1 obj = new JavaProj1();
-		  obj.disp("Faith Scholarship");
-		  obj.disp(3000);
+		  obj.disp("Faith Scholarship"); //displays the scholarship awarded
+		  obj.disp(3000); //displays the amount for user to look back at
 	  } else if (gpa < 1.99) { // if the gpa is less than 1.99 then you will not qualify for a scholarship.
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You do not qualify for any " +
@@ -124,11 +124,11 @@ public class JavaProj1
 		
 		gpaDifference = NewGPA - gpa; // calculates the new gpa
 		
-		if (NewGPA > gpa) {
+		if (NewGPA > gpa) { //will show the display message if your new GPA is higher than your old GPA
 		JOptionPane.showMessageDialog(null,
 				String.format("Your GPA raised by %,.2f", gpaDifference));
 		}
-			else if(NewGPA < gpa) {
+			else if(NewGPA < gpa) { //will show the display message if your new GPA is lower than your old GPA
 				JOptionPane.showMessageDialog(null,
 						String.format("Your GPA dropped by %,.2f", gpaDifference));
 		}
@@ -140,7 +140,7 @@ public class JavaProj1
         						"next semester."));
 		} else if(NewGPA <= 1.99){
 			followed obj = new followedSemester2();
-				obj.display();
+				obj.display(); //calls the followedSemester2 program
 		}
 		
 		
@@ -150,11 +150,11 @@ public class JavaProj1
 		String yesno = YesNo.next();
 		if (yesno.equals("Y")) {//Allows the user to enter Y for Yes
 			
-			moneyOwed();
+			moneyOwed(); //if yes the moneyOwed function will be called
 		}
 			else if(yesno.equals("N")) {//Allows the user to enter N for No
 				
-			System.exit(0);
+			System.exit(0); // if no the program will end
 		
 		}
 	}
@@ -163,7 +163,7 @@ public class JavaProj1
 	public static void moneyOwed()/*This function will calculate how much money is owed
 												to the university after scholarship*/
 	{
-		Scanner keyboard = new Scanner(System.in);
+		Scanner keyboard = new Scanner(System.in); 
 		
 		//List of scholarship awards from before as an array 
 		int [] AwardedScholarship = {20000, 12000, 7000, 3000}; // amounts of the four scholarships
@@ -171,11 +171,11 @@ public class JavaProj1
 		double MoneyOwed; //This is the variable used for final cost out of pocket
 		int TuitionCost; //Cost of tuition without Scholarship
 		String input;     // To hold the user's input
-		int ScholarshipWorth;
+		int ScholarshipWorth; //Will hold amount of the awardedscholarship
 		
 		input = JOptionPane.showInputDialog("How much does your tuition cost " +
 											"without scholarships? "); // ask user what their tuition is
-		TuitionCost = Integer.parseInt(input);
+		TuitionCost = Integer.parseInt(input); //saves the user tuition cost input for later
 		
 		input = JOptionPane.showInputDialog("How much was the scholarship you were awarded? "); // the amount of the scholarship the user was awarded
 		
@@ -209,7 +209,7 @@ public class JavaProj1
 			}
 		}
 				
-	      main(null);
+	      main(null); //recurs the entire program
 
 	}	
 }
