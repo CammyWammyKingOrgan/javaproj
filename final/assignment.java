@@ -204,7 +204,7 @@ public class JavaProj1
 				System.out.println("Oops wrong number!"); //This case would never be called since we are only asking for case 2
 				break;
 			case 2:
-				System.out.println("Sources: Dr. Munoz ITS 275 powerpoints and Dr. Munoz Github - https://github.com/DrGMC/JAVA"); //the case 2 will display our sources that were used in the project//
+				System.out.println("Sources: Dr. Munoz ITS 275 powerpoints and Dr. Munoz Github - https://github.com/DrGMC/JAVA, https://www.w3schools.com/java/"); //the case 2 will display our sources that were used in the project//
 				break;
 			}
 		}
