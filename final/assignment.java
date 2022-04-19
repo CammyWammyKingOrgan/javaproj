@@ -213,4 +213,4 @@ public class JavaProj1
 
 	}	
 }
-//Sources: Dr. Munoz ITS 275 powerpoints and Dr. Munoz Github - https://github.com/DrGMC/JAVA
+//Sources: Dr. Munoz ITS 275 powerpoints and Dr. Munoz Github - https://github.com/DrGMC/JAVA, https://www.w3schools.com/java/
