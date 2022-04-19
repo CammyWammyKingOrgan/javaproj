@@ -1,7 +1,7 @@
 package Projects;
 import javax.swing.JOptionPane;
 
-public class followedSemester2 extends followed {
+public class followedSemester2 extends followed { // this is for the next semester
 
 		//override previous system output
 		public void display() {
