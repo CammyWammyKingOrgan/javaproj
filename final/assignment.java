@@ -114,15 +114,15 @@ public class JavaProj1
 		
 		Scanner YesNo = new Scanner(System.in);//Scanner for the user to enter Y or N
 		
-		input = JOptionPane.showInputDialog("What was your starting GPA last semester? ");
+		input = JOptionPane.showInputDialog("What was your starting GPA last semester? "); // asks for users previous gpa
 		
 		gpa = Double.parseDouble(input);
 		
-		input = JOptionPane.showInputDialog("What is your new GPA after last semester?");
+		input = JOptionPane.showInputDialog("What is your new GPA after last semester?"); // ask user for their present gpa
 		
 		NewGPA = Double.parseDouble(input);
 		
-		gpaDifference = NewGPA - gpa;
+		gpaDifference = NewGPA - gpa; // calculates the new gpa
 		
 		if (NewGPA > gpa) {
 		JOptionPane.showMessageDialog(null,
@@ -166,7 +166,7 @@ public class JavaProj1
 		Scanner keyboard = new Scanner(System.in);
 		
 		//List of scholarship awards from before as an array 
-		int [] AwardedScholarship = {20000, 12000, 7000, 3000};
+		int [] AwardedScholarship = {20000, 12000, 7000, 3000}; // amounts of the four scholarships
 
 		double MoneyOwed; //This is the variable used for final cost out of pocket
 		int TuitionCost; //Cost of tuition without Scholarship
@@ -174,26 +174,26 @@ public class JavaProj1
 		int ScholarshipWorth;
 		
 		input = JOptionPane.showInputDialog("How much does your tuition cost " +
-											"without scholarships? ");
+											"without scholarships? "); // ask user what their tuition is
 		TuitionCost = Integer.parseInt(input);
 		
-		input = JOptionPane.showInputDialog("How much was the scholarship you were awarded? ");
+		input = JOptionPane.showInputDialog("How much was the scholarship you were awarded? "); // the amount of the scholarship the user was awarded
 		
 		ScholarshipWorth = Integer.parseInt(input);
 			if (ScholarshipWorth == 20000) {
-				MoneyOwed = TuitionCost - AwardedScholarship[0];
+				MoneyOwed = TuitionCost - AwardedScholarship[0]; //this scholarship is worth 20000
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: $%,.2f", MoneyOwed));
+		        		String.format("You still owe the university: $%,.2f", MoneyOwed));// money owed after scholarship
 			} else if (ScholarshipWorth == 12000) {
-				MoneyOwed = TuitionCost - AwardedScholarship[1];
+				MoneyOwed = TuitionCost - AwardedScholarship[1]; // this scholarship is worth 12000
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: $%,.2f", MoneyOwed));
+		        		String.format("You still owe the university: $%,.2f", MoneyOwed)); // money owed after scholarship
 			} else if (ScholarshipWorth == 7000) {
-				MoneyOwed = TuitionCost - AwardedScholarship[2];
+				MoneyOwed = TuitionCost - AwardedScholarship[2]; // this scholarship is worth 7000
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: $%,.2f", MoneyOwed));
+		        		String.format("You still owe the university: $%,.2f", MoneyOwed)); // money owed after scholarship
 			} else if (ScholarshipWorth == 3000) {
-				MoneyOwed = TuitionCost - AwardedScholarship[3];
+				MoneyOwed = TuitionCost - AwardedScholarship[3]; // this scholarship is worth 3000
 				JOptionPane.showMessageDialog(null,
 		        		String.format("You still owe the university: $%,.2f", MoneyOwed)); //Owed amount after scholarships.//
 			}
