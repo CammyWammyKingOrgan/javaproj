@@ -8,7 +8,7 @@ public class JavaProj1
 		System.out.println(Scholarship);
 	}
 	public void disp(int Scholarship) {
-		System.out.println(Scholarship);
+		System.out.println(Scholarship); // 7-13 allows the string scholarship to be the same variable but gives different things
 	}
 		
 	public static void main(String args[])
