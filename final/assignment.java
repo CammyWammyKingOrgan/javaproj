@@ -195,16 +195,16 @@ public class JavaProj1
 			} else if (ScholarshipWorth == 3000) {
 				MoneyOwed = TuitionCost - AwardedScholarship[3];
 				JOptionPane.showMessageDialog(null,
-		        		String.format("You still owe the university: $%,.2f", MoneyOwed));
+		        		String.format("You still owe the university: $%,.2f", MoneyOwed)); //Owed amount after scholarships.//
 			}
 				
-			int resource = 2; {
-			switch (resource) {
+			int resource = 2; { //The varible that wil be used in te switch function.//
+			switch (resource) { //Swich is use to call a specific case number.//
 			case 1:
-				System.out.println("Oops wrong number!");
+				System.out.println("Oops wrong number!"); //This case would never be called since we are only asking for case 2
 				break;
 			case 2:
-				System.out.println("Sources: Dr. Munoz ITS 275 powerpoints and Dr. Munoz Github - https://github.com/DrGMC/JAVA");
+				System.out.println("Sources: Dr. Munoz ITS 275 powerpoints and Dr. Munoz Github - https://github.com/DrGMC/JAVA"); //the case 2 will display our sources that were used in the project//
 				break;
 			}
 		}
