@@ -10,7 +10,7 @@ public class JavaProj1
 	public void disp(int Scholarship) {
 		System.out.println(Scholarship);
 	}
-	
+		
 	public static void main(String args[])
 	{
 		
@@ -47,10 +47,10 @@ public class JavaProj1
 	        gpa = totalCredit / classes;
 	        //Displays users gpa
 	        JOptionPane.showMessageDialog(null,
-	        		String.format("Your current GPA is: %,.2f", gpa));
-	        
-	  if (gpa >= 3.5 && gpa <= 4.0) { /* if the gpa is greater than or equal
-	   						to 3.5 and less than or equal to 4.0 you are awarded the Presidential Scholarship.*/
+	        		String.format("Your current GPA is: %,.2f", gpa)); 
+	 
+	   if (gpa >= 3.5 && gpa <= 4.0) { /* if the gpa is greater than or equal
+	   									to 3.5 and less than or equal to 4.0 you are awarded the Presidential Scholarship.*/
 		  JOptionPane.showMessageDialog(null,
 	        		String.format("You have been awarded the " + 
 	        					"Presidental Scholarship worth: $20,000"));
@@ -87,10 +87,10 @@ public class JavaProj1
 	        					"of the Scholarship Programs."));
 	  }
 	  
-	  
-		
 		  
-		System.out.println("Do you want to determine if you will keep your scholarship " +
+		
+	   
+	   System.out.println("Do you want to determine if you will keep your scholarship " +
 				  				"next semester? Y/N");
 		String yesno = YesNo.next();
 		if (yesno.equals("Y")) {
@@ -102,7 +102,7 @@ public class JavaProj1
 				System.exit(0);
 		}
 	}
-			
+	
 	public static void followedSemester()/*This function will calculate if the user
 														still has their scholarship the following semester*/
 	{
@@ -197,7 +197,17 @@ public class JavaProj1
 				JOptionPane.showMessageDialog(null,
 		        		String.format("You still owe the university: $%,.2f", MoneyOwed));
 			}
-			
+				
+			int resource = 2; {
+			switch (resource) {
+			case 1:
+				System.out.println("Oops wrong number!");
+				break;
+			case 2:
+				System.out.println("Sources: Dr. Munoz ITS 275 powerpoints and Dr. Munoz Github - https://github.com/DrGMC/JAVA");
+				break;
+			}
+		}
 				
 	      main(null);
 
